@@ -1,0 +1,68 @@
+.container{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    /* padding: 80px 200px; */
+    /* background: url("/assets/illustration-editor-desktop.svg"); */
+    /* background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 850px 100px; */
+    font-family: 'Overpass', sans-serif;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 200px;
+}
+.title2{
+    font-size: 42px;
+    color: hsl(208, 49%, 24%);
+}
+.title3{
+    font-size: 24px;
+    color: hsl(208, 49%, 24%);
+}
+.description{
+    color: hsl(207, 13%, 34%);
+    line-height: 1.5;
+}
+.right{
+   display: flex;
+   justify-content: center;
+}
+.editorMobile{
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+    .container{
+        text-align: center;
+        height: 220vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .editorMobile{
+        display: block;
+    }
+    .editorDesktop{
+        display: none;
+    }
+    .left{
+        width: 100%;
+        padding-left: 0;
+        padding: 0 20px;
+        order: 2;
+    }
+    .right{}
+}

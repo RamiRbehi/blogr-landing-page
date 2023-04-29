@@ -1,0 +1,77 @@
+.container{
+    width: 90%;
+    height: 120vh;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    display: none;
+    box-shadow: 0 40px 90px -39px hsl(237, 17%, 21%);
+}
+
+.ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    list-style: none;
+}
+.li{
+    text-decoration: none;
+    color: hsl(208, 49%, 24%);
+    font-size: 28px;
+    font-weight: 700;
+}
+.dropdownContainer{
+    background-color: hsl(240, 2%, 79%);
+    width: 100vw;
+    height: 100%;
+    padding: 10px 0;
+
+}
+.ListItems{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: hsl(207, 13%, 34%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hr{
+    width: 90%;
+}
+
+.userClients{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login{
+    color: hsl(208, 49%, 24%);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.signup {
+    border: none;
+    border-radius: 50px;
+    width: 110px;
+    height: 50px;
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 375px) {
+    .container{
+        display: grid;
+        place-items: center;
+    }
+}

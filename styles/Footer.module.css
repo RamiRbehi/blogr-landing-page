@@ -1,0 +1,52 @@
+.container{
+    height: 60vh;
+    background-color: hsl(240, 10%, 16%);
+    color: hsl(240, 2%, 79%);
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 80px;
+    border-top-right-radius: 100px;
+}
+.logo{
+    position: relative;
+}
+.listItems{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 700;
+}
+.listItems span{
+    padding-bottom: 20px;
+}
+.listItems li{
+    font-weight: 300;
+    cursor: pointer;
+}
+.listItems li:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 375px) {
+    .container{
+        height: 160vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+    .logoImage{
+        width: 120px;
+        height: 40px;
+    }
+    .listItems{
+        font-size: 22px;
+    }
+    .listItems li {
+        font-size: 18px;
+    }
+}

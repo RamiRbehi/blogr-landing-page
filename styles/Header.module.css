@@ -1,0 +1,129 @@
+.container {
+    background-color: transparent;
+    height: 10vh;
+    width: 100%;
+    padding: 15px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.left{
+    flex: 1;
+}
+
+.ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.li{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.up {
+    transform: rotate(-180deg);
+    transition: transform 1s ease;
+  }
+  
+  /* .down {
+    transform: rotate(0deg);
+    transition: transform 1s ease;
+  } */
+
+.center{
+    flex: 3;
+    display: flex;
+}
+
+.dropdownContainer{
+    position: absolute;
+    top: 70px;
+    background-color: hsl(0, 0%, 100%);
+    width: 15vw;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    transform-origin: top;
+    transition: transform .4s ease-in-out;
+}
+
+.ListItems {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: hsl(237, 17%, 21%);
+}
+.ListItems li{
+    cursor: pointer;
+}
+.ListItems li:hover{
+    font-weight: 700;
+}
+/* .lists{
+    text-decoration: none;
+    color: hsl(237, 17%, 21%);
+} */
+
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.login{
+    color: hsl(240, 2%, 79%);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.signup {
+    border: none;
+    border-radius: 50px;
+    width: 90px;
+    height: 40px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(355, 100%, 74%);
+    cursor: pointer;
+    font-weight: 700;
+}
+.signup:hover{
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+}
+
+.responsiveButton{
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+    .container{
+        padding: 15px 30px;
+        width: 150%;
+    }
+    .left{
+        display: flex;
+    }
+    .center{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .responsiveButton{
+        display: block;
+    }
+}

@@ -1,0 +1,69 @@
+.container{
+    background: url("/assets/bg-pattern-intro-desktop.svg") no-repeat,
+                linear-gradient(to right, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+    background-size: 200%;
+    background-position: 20% 50%;
+    height: 60vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: hsl(0, 0%, 100%);
+    padding: 80px 0;
+    border-bottom-left-radius: 100px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.title{
+    font-size: 48px;
+}
+.description{
+    color: hsl(240, 2%, 79%);
+}
+.buttonWrapp{
+    display: flex;
+    gap: 20px;
+}
+.buttonStart{
+    border: none;
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(355, 100%, 74%);
+    cursor: pointer;
+    font-weight: 700;
+}
+.buttonStart:hover{
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+}
+.buttonLearn{
+    border: none;
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: solid 1px hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-weight: 700;
+}
+.buttonLearn:hover{
+    color: hsl(355, 100%, 74%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+@media only screen and (max-width: 375px) {
+    .container{
+        text-align: center;
+        gap: 20px;
+        height: 120vh;
+        background: url("/assets/bg-pattern-intro-mobile.svg") no-repeat,
+                linear-gradient(to right, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+        background-size: 400%;
+        background-position: 35% 50%;
+    }
+    /* .description{
+        width: 70%;
+    } */
+}
